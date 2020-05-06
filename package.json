@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do bytebamk para os clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jferraz84/curso-javaScript-Basico.git"
+  },
+  "author": "Jorge Ferraz",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jferraz84/curso-javaScript-Basico/issues"
+  },
+  "homepage": "https://github.com/jferraz84/curso-javaScript-Basico#readme"
+}
