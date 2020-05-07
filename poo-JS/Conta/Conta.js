@@ -31,8 +31,7 @@ export  class Conta {
     // Metodo abstrato, que deve ser implementado pela classe que vai herdar
     sacar(valor) {
 
-        const taxa = 1.01;
-        return this._sacar(valor, taxa);
+        throw new Error("O metodo SACAR da conta é abstrato");
         
     }
     
