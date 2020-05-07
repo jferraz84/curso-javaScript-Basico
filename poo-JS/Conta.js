@@ -1,9 +1,16 @@
+// Classe abastrata , não pode ser einstanciada e sim herdada
 export  class Conta {
 
     constructor(saldoInicial, cliente, agencia){
+
+        if (this.constructor == Conta) {
+            throw new Error("Não deveria ser instaciado um tipo 'Conta' diretamente pois ela é uma classe abstrata")
+        }
+
         this._saldo = saldoInicial;
         this._cliente= cliente;
         this._agencia = agencia;
+
     }
 
     set cliente(novoValor){
@@ -21,10 +28,12 @@ export  class Conta {
         return this._saldo;
     }
 
+    // Metodo abstrato, que deve ser implementado pela classe que vai herdar
     sacar(valor) {
 
-        let taxa = 1
+        const taxa = 1.01;
         return this._sacar(valor, taxa);
+        
     }
     
     _sacar(valor, taxa){
